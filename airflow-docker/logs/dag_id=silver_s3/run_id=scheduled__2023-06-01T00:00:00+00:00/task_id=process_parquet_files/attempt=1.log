@@ -1,0 +1,44 @@
+[2024-05-19T20:27:00.698+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T20:27:00.736+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [queued]>
+[2024-05-19T20:27:00.751+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [queued]>
+[2024-05-19T20:27:00.754+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T20:27:00.778+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_parquet_files> on 2023-06-01 00:00:00+00:00
+[2024-05-19T20:27:00.789+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=799) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T20:27:00.795+0000] {standard_task_runner.py:63} INFO - Started process 821 to run task
+[2024-05-19T20:27:00.795+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'silver_s3', 'process_parquet_files', 'scheduled__2023-06-01T00:00:00+00:00', '--job-id', '281', '--raw', '--subdir', 'DAGS_FOLDER/silver_s3.py', '--cfg-path', '/tmp/tmpgofzvz86']
+[2024-05-19T20:27:00.804+0000] {standard_task_runner.py:91} INFO - Job 281: Subtask process_parquet_files
+[2024-05-19T20:27:00.899+0000] {task_command.py:426} INFO - Running <TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [running]> on host 620090466bc8
+[2024-05-19T20:27:00.997+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='silver_s3' AIRFLOW_CTX_TASK_ID='process_parquet_files' AIRFLOW_CTX_EXECUTION_DATE='2023-06-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-01T00:00:00+00:00'
+[2024-05-19T20:27:01.001+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T20:27:01.048+0000] {base.py:84} INFO - Using connection ID 'aws_s3' for task execution.
+[2024-05-19T20:27:01.049+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-05-19T20:27:05.917+0000] {logging_mixin.py:188} INFO - No .parquet files found.
+[2024-05-19T20:27:05.921+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T20:27:05.924+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T20:27:05.935+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=silver_s3, task_id=process_parquet_files, run_id=scheduled__2023-06-01T00:00:00+00:00, execution_date=20230601T000000, start_date=20240519T202700, end_date=20240519T202705
+[2024-05-19T20:27:05.965+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T20:27:05.976+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T20:27:05.977+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-19T20:38:25.815+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T20:38:25.823+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [queued]>
+[2024-05-19T20:38:25.826+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [queued]>
+[2024-05-19T20:38:25.826+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T20:38:25.831+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_parquet_files> on 2023-06-01 00:00:00+00:00
+[2024-05-19T20:38:25.834+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2430) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T20:38:25.836+0000] {standard_task_runner.py:63} INFO - Started process 2432 to run task
+[2024-05-19T20:38:25.836+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'silver_s3', 'process_parquet_files', 'scheduled__2023-06-01T00:00:00+00:00', '--job-id', '397', '--raw', '--subdir', 'DAGS_FOLDER/silver_s3.py', '--cfg-path', '/tmp/tmpfso5l7tz']
+[2024-05-19T20:38:25.838+0000] {standard_task_runner.py:91} INFO - Job 397: Subtask process_parquet_files
+[2024-05-19T20:38:25.860+0000] {task_command.py:426} INFO - Running <TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-01T00:00:00+00:00 [running]> on host 620090466bc8
+[2024-05-19T20:38:25.894+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='silver_s3' AIRFLOW_CTX_TASK_ID='process_parquet_files' AIRFLOW_CTX_EXECUTION_DATE='2023-06-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-01T00:00:00+00:00'
+[2024-05-19T20:38:25.896+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T20:38:25.906+0000] {base.py:84} INFO - Using connection ID 'aws_s3' for task execution.
+[2024-05-19T20:38:25.906+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-05-19T20:38:36.224+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T20:38:36.228+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T20:38:36.244+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=silver_s3, task_id=process_parquet_files, run_id=scheduled__2023-06-01T00:00:00+00:00, execution_date=20230601T000000, start_date=20240519T203825, end_date=20240519T203836
+[2024-05-19T20:38:36.308+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T20:38:36.314+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

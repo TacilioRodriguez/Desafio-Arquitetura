@@ -1,0 +1,65 @@
+[2024-05-19T20:27:14.710+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T20:27:14.732+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [queued]>
+[2024-05-19T20:27:14.751+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [queued]>
+[2024-05-19T20:27:14.760+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T20:27:14.786+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_parquet_files> on 2023-06-23 00:00:00+00:00
+[2024-05-19T20:27:14.795+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=872) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T20:27:14.800+0000] {standard_task_runner.py:63} INFO - Started process 887 to run task
+[2024-05-19T20:27:14.800+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'silver_s3', 'process_parquet_files', 'scheduled__2023-06-23T00:00:00+00:00', '--job-id', '303', '--raw', '--subdir', 'DAGS_FOLDER/silver_s3.py', '--cfg-path', '/tmp/tmp5tm370zj']
+[2024-05-19T20:27:14.809+0000] {standard_task_runner.py:91} INFO - Job 303: Subtask process_parquet_files
+[2024-05-19T20:27:14.908+0000] {task_command.py:426} INFO - Running <TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [running]> on host 620090466bc8
+[2024-05-19T20:27:15.018+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='silver_s3' AIRFLOW_CTX_TASK_ID='process_parquet_files' AIRFLOW_CTX_EXECUTION_DATE='2023-06-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-23T00:00:00+00:00'
+[2024-05-19T20:27:15.019+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T20:27:15.042+0000] {base.py:84} INFO - Using connection ID 'aws_s3' for task execution.
+[2024-05-19T20:27:15.044+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-05-19T20:27:19.863+0000] {logging_mixin.py:188} INFO - No .parquet files found.
+[2024-05-19T20:27:19.867+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T20:27:19.870+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T20:27:19.887+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=silver_s3, task_id=process_parquet_files, run_id=scheduled__2023-06-23T00:00:00+00:00, execution_date=20230623T000000, start_date=20240519T202714, end_date=20240519T202719
+[2024-05-19T20:27:19.929+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T20:27:19.943+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T20:27:19.944+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-05-19T20:40:40.029+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T20:40:40.036+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [queued]>
+[2024-05-19T20:40:40.039+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [queued]>
+[2024-05-19T20:40:40.039+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T20:40:40.044+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_parquet_files> on 2023-06-23 00:00:00+00:00
+[2024-05-19T20:40:40.049+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=2895) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T20:40:40.051+0000] {standard_task_runner.py:63} INFO - Started process 2901 to run task
+[2024-05-19T20:40:40.051+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'silver_s3', 'process_parquet_files', 'scheduled__2023-06-23T00:00:00+00:00', '--job-id', '420', '--raw', '--subdir', 'DAGS_FOLDER/silver_s3.py', '--cfg-path', '/tmp/tmp4dbw_va7']
+[2024-05-19T20:40:40.053+0000] {standard_task_runner.py:91} INFO - Job 420: Subtask process_parquet_files
+[2024-05-19T20:40:40.089+0000] {task_command.py:426} INFO - Running <TaskInstance: silver_s3.process_parquet_files scheduled__2023-06-23T00:00:00+00:00 [running]> on host 620090466bc8
+[2024-05-19T20:40:40.130+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='silver_s3' AIRFLOW_CTX_TASK_ID='process_parquet_files' AIRFLOW_CTX_EXECUTION_DATE='2023-06-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-06-23T00:00:00+00:00'
+[2024-05-19T20:40:40.131+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T20:40:40.144+0000] {base.py:84} INFO - Using connection ID 'aws_s3' for task execution.
+[2024-05-19T20:40:40.144+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='aws_s3', conn_type='aws') credentials retrieved from login and password.
+[2024-05-19T20:40:45.643+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T20:40:45.648+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/silver_s3.py", line 67, in process_parquet_files
+    os.remove(file_path)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/disney_data_20240518T000000.parquet'
+[2024-05-19T20:40:45.663+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=silver_s3, task_id=process_parquet_files, run_id=scheduled__2023-06-23T00:00:00+00:00, execution_date=20230623T000000, start_date=20240519T204040, end_date=20240519T204045
+[2024-05-19T20:40:45.693+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 420 for task process_parquet_files ([Errno 2] No such file or directory: '/tmp/disney_data_20240518T000000.parquet'; 2901)
+[2024-05-19T20:40:45.716+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-19T20:40:45.725+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T20:40:45.725+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

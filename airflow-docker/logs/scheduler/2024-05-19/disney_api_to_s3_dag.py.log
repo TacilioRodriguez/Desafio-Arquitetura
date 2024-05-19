@@ -1,0 +1,78 @@
+[2024-05-19T15:30:45.392+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:30:45.393+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:30:45.394+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:30:45.394+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:30:45.683+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:30:45.720+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:30:45.719+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:30:45.723+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:30:45.723+0000] {dag.py:3118} INFO - Creating ORM DAG for disney_api_to_s3
+[2024-05-19T15:30:45.727+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:30:45.727+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:25:00+00:00, run_after=2024-05-19 15:30:00+00:00
+[2024-05-19T15:30:45.733+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.351 seconds
+[2024-05-19T15:31:15.991+0000] {processor.py:161} INFO - Started process (PID=433) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:15.992+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:31:15.993+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:15.993+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:16.247+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:16.257+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:16.257+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:31:16.264+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:16.264+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:25:00+00:00, run_after=2024-05-19 15:30:00+00:00
+[2024-05-19T15:31:16.270+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.287 seconds
+[2024-05-19T15:31:46.541+0000] {processor.py:161} INFO - Started process (PID=440) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:46.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:31:46.542+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:46.542+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:46.794+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:31:46.805+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:46.805+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:31:46.815+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:31:46.814+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:25:00+00:00, run_after=2024-05-19 15:30:00+00:00
+[2024-05-19T15:31:46.821+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.284 seconds
+[2024-05-19T15:32:17.130+0000] {processor.py:161} INFO - Started process (PID=452) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:17.131+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:32:17.132+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:17.132+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:17.344+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:17.353+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:17.353+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:32:17.359+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:17.359+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:32:17.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.242 seconds
+[2024-05-19T15:32:47.456+0000] {processor.py:161} INFO - Started process (PID=460) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:47.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:32:47.458+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:47.458+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:47.667+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:32:47.674+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:47.674+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:32:47.681+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:32:47.681+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:32:47.687+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.238 seconds
+[2024-05-19T15:33:17.995+0000] {processor.py:161} INFO - Started process (PID=472) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:17.996+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:33:17.997+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:17.997+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:18.210+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:18.218+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:18.218+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:33:18.225+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:18.225+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:33:18.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.243 seconds
+[2024-05-19T15:33:48.293+0000] {processor.py:161} INFO - Started process (PID=480) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:48.294+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:33:48.295+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:48.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:48.536+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:33:48.545+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:48.544+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:33:48.551+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:33:48.551+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:33:48.558+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.272 seconds
+[2024-05-19T15:34:18.791+0000] {processor.py:161} INFO - Started process (PID=488) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:18.793+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:34:18.794+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:18.793+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:19.019+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:19.027+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:19.027+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:34:19.035+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:19.035+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:34:19.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.257 seconds
+[2024-05-19T15:34:49.137+0000] {processor.py:161} INFO - Started process (PID=496) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:49.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:34:49.140+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:49.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:49.353+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:34:49.361+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:49.361+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:34:49.369+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:34:49.368+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:30:00+00:00, run_after=2024-05-19 15:35:00+00:00
+[2024-05-19T15:34:49.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.244 seconds
+[2024-05-19T15:35:19.621+0000] {processor.py:161} INFO - Started process (PID=504) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:19.623+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:35:19.624+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:19.624+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:19.877+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:19.886+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:19.885+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:35:19.892+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:19.892+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:35:00+00:00, run_after=2024-05-19 15:40:00+00:00
+[2024-05-19T15:35:19.898+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.285 seconds
+[2024-05-19T15:35:49.934+0000] {processor.py:161} INFO - Started process (PID=512) to work on /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:49.935+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/disney_api_to_s3_dag.py for tasks to queue
+[2024-05-19T15:35:49.937+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:49.936+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:50.205+0000] {processor.py:840} INFO - DAG(s) 'disney_api_to_s3' retrieved from /opt/airflow/dags/disney_api_to_s3_dag.py
+[2024-05-19T15:35:50.215+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:50.215+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-05-19T15:35:50.224+0000] {logging_mixin.py:188} INFO - [2024-05-19T15:35:50.224+0000] {dag.py:3954} INFO - Setting next_dagrun for disney_api_to_s3 to 2024-05-19 15:35:00+00:00, run_after=2024-05-19 15:40:00+00:00
+[2024-05-19T15:35:50.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/disney_api_to_s3_dag.py took 0.306 seconds

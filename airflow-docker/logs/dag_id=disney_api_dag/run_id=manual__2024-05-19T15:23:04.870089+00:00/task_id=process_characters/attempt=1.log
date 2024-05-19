@@ -1,0 +1,70 @@
+[2024-05-19T15:23:08.053+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T15:23:08.059+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: disney_api_dag.process_characters manual__2024-05-19T15:23:04.870089+00:00 [queued]>
+[2024-05-19T15:23:08.063+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: disney_api_dag.process_characters manual__2024-05-19T15:23:04.870089+00:00 [queued]>
+[2024-05-19T15:23:08.063+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T15:23:08.068+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): process_characters> on 2024-05-19 15:23:04.870089+00:00
+[2024-05-19T15:23:08.070+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=287) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T15:23:08.071+0000] {standard_task_runner.py:63} INFO - Started process 289 to run task
+[2024-05-19T15:23:08.071+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'disney_api_dag', 'process_characters', 'manual__2024-05-19T15:23:04.870089+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/disney_api_dag.py', '--cfg-path', '/tmp/tmputdvemxc']
+[2024-05-19T15:23:08.072+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask process_characters
+[2024-05-19T15:23:08.088+0000] {task_command.py:426} INFO - Running <TaskInstance: disney_api_dag.process_characters manual__2024-05-19T15:23:04.870089+00:00 [running]> on host 620090466bc8
+[2024-05-19T15:23:08.123+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='disney_api_dag' AIRFLOW_CTX_TASK_ID='process_characters' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T15:23:04.870089+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T15:23:04.870089+00:00'
+[2024-05-19T15:23:08.124+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T15:23:08.130+0000] {logging_mixin.py:188} INFO - Achilles
+[2024-05-19T15:23:08.130+0000] {logging_mixin.py:188} INFO - Abigail the Cow
+[2024-05-19T15:23:08.130+0000] {logging_mixin.py:188} INFO - Abdullah
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - Admiral Boom and Mr. Binnacle
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - .GIFfany
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - 90's Adventure Bear
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - Candace Adams
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - Ahadi
+[2024-05-19T15:23:08.131+0000] {logging_mixin.py:188} INFO - Al Muddy Sultan
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Irwina Allen
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Ambrose
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Amos
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Arabella
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Arabella Smith
+[2024-05-19T15:23:08.132+0000] {logging_mixin.py:188} INFO - Queen Ariel
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Arthur and Cecil
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Fiona Ashbury
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Ashcan and Pete
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Aspen
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Astuto
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Athena
+[2024-05-19T15:23:08.133+0000] {logging_mixin.py:188} INFO - Aunt Em
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Aviarius
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Prince Axel
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Butter Otter
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Baby Panda
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Marta Balatico
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Mr. Baldwin
+[2024-05-19T15:23:08.134+0000] {logging_mixin.py:188} INFO - Baloo
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Michael Banks
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Banshee
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Baron Blitz
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Sir Bart
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Bernice Beachmont
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Beardini the Pirate Magician
+[2024-05-19T15:23:08.135+0000] {logging_mixin.py:188} INFO - Beheaded Knight
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Alan Coleman
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Alma
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Captain Amelia
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Amelia Duckworth
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Captain Anderson
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Erica Ange
+[2024-05-19T15:23:08.136+0000] {logging_mixin.py:188} INFO - Angela
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Anthony Biddle
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Apaches
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Apothecary Gary
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Aqua
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Archibald Smelding
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Mr. Arrow
+[2024-05-19T15:23:08.137+0000] {logging_mixin.py:188} INFO - Queen Athena
+[2024-05-19T15:23:08.138+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T15:23:08.138+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T15:23:08.141+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=disney_api_dag, task_id=process_characters, run_id=manual__2024-05-19T15:23:04.870089+00:00, execution_date=20240519T152304, start_date=20240519T152308, end_date=20240519T152308
+[2024-05-19T15:23:08.171+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T15:23:08.187+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T15:23:08.188+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

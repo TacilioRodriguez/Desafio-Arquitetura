@@ -1,0 +1,21 @@
+[2024-05-19T15:55:10.711+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T15:55:10.723+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: disney_data_pipeline.query_disney_api manual__2024-05-19T15:55:09.409852+00:00 [queued]>
+[2024-05-19T15:55:10.728+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: disney_data_pipeline.query_disney_api manual__2024-05-19T15:55:09.409852+00:00 [queued]>
+[2024-05-19T15:55:10.728+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T15:55:10.738+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): query_disney_api> on 2024-05-19 15:55:09.409852+00:00
+[2024-05-19T15:55:10.750+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=771) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T15:55:10.751+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'disney_data_pipeline', 'query_disney_api', 'manual__2024-05-19T15:55:09.409852+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/api_disney.py', '--cfg-path', '/tmp/tmpuu_ygr5j']
+[2024-05-19T15:55:10.754+0000] {standard_task_runner.py:63} INFO - Started process 776 to run task
+[2024-05-19T15:55:10.755+0000] {standard_task_runner.py:91} INFO - Job 27: Subtask query_disney_api
+[2024-05-19T15:55:10.789+0000] {task_command.py:426} INFO - Running <TaskInstance: disney_data_pipeline.query_disney_api manual__2024-05-19T15:55:09.409852+00:00 [running]> on host 620090466bc8
+[2024-05-19T15:55:10.830+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='***@example.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='disney_data_pipeline' AIRFLOW_CTX_TASK_ID='query_disney_api' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T15:55:09.409852+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-19T15:55:09.409852+00:00'
+[2024-05-19T15:55:10.832+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T15:55:11.316+0000] {logging_mixin.py:188} INFO - Error: 404 Client Error: Not Found for url: https://api.disneyapi.dev/characters
+[2024-05-19T15:55:11.318+0000] {python.py:237} INFO - Done. Returned value was: None
+[2024-05-19T15:55:11.318+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T15:55:11.325+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=disney_data_pipeline, task_id=query_disney_api, run_id=manual__2024-05-19T15:55:09.409852+00:00, execution_date=20240519T155509, start_date=20240519T155510, end_date=20240519T155511
+[2024-05-19T15:55:11.368+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-05-19T15:55:11.378+0000] {taskinstance.py:3498} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T15:55:11.378+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

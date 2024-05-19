@@ -1,0 +1,85 @@
+[2024-05-19T19:00:30.325+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-05-19T19:00:30.332+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: disney_api_to_s3.get_disney_data scheduled__2024-05-19T18:55:00+00:00 [queued]>
+[2024-05-19T19:00:30.336+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: disney_api_to_s3.get_disney_data scheduled__2024-05-19T18:55:00+00:00 [queued]>
+[2024-05-19T19:00:30.336+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2024-05-19T19:00:30.341+0000] {taskinstance.py:2330} INFO - Executing <Task(SimpleHttpOperator): get_disney_data> on 2024-05-19 18:55:00+00:00
+[2024-05-19T19:00:30.345+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61: DeprecationWarning: This process (pid=566) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-05-19T19:00:30.346+0000] {standard_task_runner.py:63} INFO - Started process 572 to run task
+[2024-05-19T19:00:30.346+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'disney_api_to_s3', 'get_disney_data', 'scheduled__2024-05-19T18:55:00+00:00', '--job-id', '100', '--raw', '--subdir', 'DAGS_FOLDER/api_disney.py', '--cfg-path', '/tmp/tmpg1ahhf6q']
+[2024-05-19T19:00:30.348+0000] {standard_task_runner.py:91} INFO - Job 100: Subtask get_disney_data
+[2024-05-19T19:00:30.370+0000] {task_command.py:426} INFO - Running <TaskInstance: disney_api_to_s3.get_disney_data scheduled__2024-05-19T18:55:00+00:00 [running]> on host 620090466bc8
+[2024-05-19T19:00:30.409+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='disney_api_to_s3' AIRFLOW_CTX_TASK_ID='get_disney_data' AIRFLOW_CTX_EXECUTION_DATE='2024-05-19T18:55:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-19T18:55:00+00:00'
+[2024-05-19T19:00:30.410+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-05-19T19:00:30.416+0000] {http.py:169} INFO - Calling HTTP method
+[2024-05-19T19:00:30.420+0000] {base.py:84} INFO - Using connection ID 'disney_api' for task execution.
+[2024-05-19T19:00:30.423+0000] {base.py:84} INFO - Using connection ID 'disney_api' for task execution.
+[2024-05-19T19:00:47.026+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-05-19T19:00:47.028+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 737, in _error_catcher
+    yield
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 883, in _raw_read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+urllib3.exceptions.IncompleteRead: IncompleteRead(11074 bytes read, 12567 more expected)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 816, in generate
+    yield from self.raw.stream(chunk_size, decode_content=True)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 1043, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 963, in read
+    data = self._raw_read(amt)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 861, in _raw_read
+    with self._error_catcher():
+  File "/usr/local/lib/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/response.py", line 761, in _error_catcher
+    raise ProtocolError(arg, e) from e
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(11074 bytes read, 12567 more expected)', IncompleteRead(11074 bytes read, 12567 more expected))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 166, in execute
+    return self.execute_sync(context=context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/operators/http.py", line 170, in execute_sync
+    response = self.hook.run(self.endpoint, self.data, self.headers, self.extra_options)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 187, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/http/hooks/http.py", line 235, in run_and_check
+    response = session.send(prepped_request, **send_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 747, in send
+    r.content
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 899, in content
+    self._content = b"".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b""
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/models.py", line 818, in generate
+    raise ChunkedEncodingError(e)
+requests.exceptions.ChunkedEncodingError: ('Connection broken: IncompleteRead(11074 bytes read, 12567 more expected)', IncompleteRead(11074 bytes read, 12567 more expected))
+[2024-05-19T19:00:47.039+0000] {taskinstance.py:1206} INFO - Marking task as UP_FOR_RETRY. dag_id=disney_api_to_s3, task_id=get_disney_data, run_id=scheduled__2024-05-19T18:55:00+00:00, execution_date=20240519T185500, start_date=20240519T190030, end_date=20240519T190047
+[2024-05-19T19:00:47.047+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 100 for task get_disney_data (('Connection broken: IncompleteRead(11074 bytes read, 12567 more expected)', IncompleteRead(11074 bytes read, 12567 more expected)); 572)
+[2024-05-19T19:00:47.075+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2024-05-19T19:00:47.083+0000] {warnings.py:110} WARNING - /home/***/.local/lib/python3.12/site-packages/***/models/baseoperator.py:1296: AirflowProviderDeprecationWarning: Call to deprecated class SimpleHttpOperator. (Class `SimpleHttpOperator` is deprecated and will be removed in a future release. Please use `HttpOperator` instead.)
+  result = cls.__new__(cls)
+
+[2024-05-19T19:00:47.093+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-19T19:00:47.094+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
