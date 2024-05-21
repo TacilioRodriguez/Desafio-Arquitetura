@@ -54,7 +54,7 @@ Aguarde de cada um dos comandos acima finalizar q seu conteiner vai subir com a 
 
 Obs.: no arquivo xx na parte de environment insira essa linha para que o botão de testar conexão na UI do Airflow seja habilitado.
 
-AIRFLOW__CORE__TEST_CONNECTION: Enabled
+AIRFLOW__CORE__TEST__CONNECTION: Enabled
 
 
 
