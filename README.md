@@ -58,7 +58,7 @@ AIRFLOW__CORE__TEST_CONNECTION: Enabled
 
 
 
-● Caso utilize o git como versionador do seu código, crie o readme com o conteúdo do
-desafio e as instruções sobre como compilar e executar o projeto, além das notas
-adicionais que você considere importantes para a avaliação e a execução.
-● Se possível, dê preferência para soluções da AWS
+Desenho da Arquitetura
+
+
+<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVKG3bcRc=/?pres=1&frameId=3458764589743416665&embedId=884406004299" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
