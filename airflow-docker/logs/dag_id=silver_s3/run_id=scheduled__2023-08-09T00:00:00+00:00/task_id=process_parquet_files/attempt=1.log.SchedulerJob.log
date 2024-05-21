@@ -1,1 +1,0 @@
-[2024-05-19T20:27:47.280+0000] {task_context_logger.py:104} ERROR - Executor reports task instance <TaskInstance: silver_s3.process_parquet_files scheduled__2023-08-09T00:00:00+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?
