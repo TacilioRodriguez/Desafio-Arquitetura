@@ -61,5 +61,6 @@ AIRFLOW__CORE__TEST__CONNECTION: Enabled
 Desenho da Arquitetura
 
 
-![Arquitetura - Desafio](https://github.com/TacilioRodriguez/Desafio-Arquitetura/assets/50462656/80f7c56a-0645-4089-8540-5ee6c4174d85)
+![Arquitetura - Desafio](https://github.com/TacilioRodriguez/Desafio-Arquitetura/assets/50462656/220a77a2-3912-4dc3-81a5-83a1931a937f)
+
 
