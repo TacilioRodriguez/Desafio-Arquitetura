@@ -60,6 +60,11 @@ AIRFLOW__CORE__TEST__CONNECTION: Enabled
 
 # Desenho da Arquitetura
 
+Arquitetura utilizada foi a medalhão. 
+
+- Bronze - Recebe os dados em formato CSV sem nenhum tratamento
+- Silver - Recebe os dados da camada Bronze transformando em um dataframe e salvando em formato .parquet
+- Gold - Recebe os dados da camada Silver tratando as colunas sem informação e retirando caracteres desnecessarios e salvando em formato .parquet
 
 
 ![Arquitetura - Desafio](https://github.com/TacilioRodriguez/Desafio-Arquitetura/assets/50462656/b4891f61-d07e-4495-bac2-7bfe16d608fa)
